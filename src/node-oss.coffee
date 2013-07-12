@@ -171,7 +171,10 @@ vendorParseAndPush = (err, data, callback) ->
 
 # parse and push from json file
 extraParseAndPush = (err, data) ->
-  return console.log '`osslist.json` not found' unless data
+  unless data
+    extraParsed = true
+    writeFile() if npmParsed
+    return console.log 'OPTIONAL `osslist.json` NOT FOUND' 
   {OSS, ConnectAsset} = JSON.parse String data
   i       = 0
   total   = 0
