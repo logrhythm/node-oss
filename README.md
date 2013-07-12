@@ -1,4 +1,2 @@
-node-oss
-========
+# Node OSS
 
-A npm module to detect npm modules and report their licenses

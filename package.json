@@ -1,0 +1,24 @@
+{
+  "name": "node-oss",
+  "version": "0.0.1",
+  "description": "A CLI tool to recurisively find all the npm modules in your project and document them along with their license",
+  "main": "./lib/node-oss.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "directories": {
+    "bin": "./bin"
+  },
+  "preferGlobal": "true",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:LogRhythm/node-oss.git"
+  },
+  "author": "Isaac Shapira",
+  "license": "MIT",
+  "dependencies": {
+    "jquery" : "1.8.3",
+    "coffee-script" : "1.6.x",
+    "optimist": "~0.3.5"
+  }
+}
