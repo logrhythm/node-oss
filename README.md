@@ -27,3 +27,23 @@ To use **node-oss** simple run the following command:
      node-oss
      
 and watch the data come back in your terminal. When its done it will write a `.CSV` file to the directory called `openSource-[date].csv`.
+
+If you wish you may declare further OSS to be included in the `.CSV`, by adding `osslist.json` to the root directory. Here is an example of how this file is to be formatted:
+
+     {
+          "OSS" : {
+               "Nodejs" : {
+                    "url"     : "https://github.com/joyent/node",
+                    "license" : "https://raw.github.com/joyent/node/master/LICENSE"
+               },
+               "Another Project" : {
+                    "license" : "MIT"
+               },
+               "Yet Another" : {
+                    "url"     : "path/for/your/refference",
+                    "license" : "BSD"
+               }
+          }
+     }
+     
+including the `url` is entirely optional right now, but may have a use in the future. For the moment its just for your reffernce as a part of documentaion.
