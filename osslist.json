@@ -1,0 +1,8 @@
+{
+	"OSS" : {
+		"Nodejs" : {
+			"url" 		: "https://github.com/joyent/node",
+			"license" 	: "https://raw.github.com/joyent/node/master/LICENSE"
+		}
+	}
+}
