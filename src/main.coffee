@@ -218,6 +218,8 @@ extraParseAndPush = (err, data) ->
 # spawn `npm list --json=true` process
 list = spawn 'npm', ['list', '--json=true']
 # `npm list` callback
-list.stdout.on 'data', npmParseAndPush
+npmJSON = ''
+list.stdout.on 'data', (data) -> npmJSON += String data
+list.stdout.on 'close', -> npmParseAndPush npmJSON
 # read `osslist.json` 
 fs.readFile 'osslist.json', 'utf8', extraParseAndPush
