@@ -1,6 +1,6 @@
 # Node OSS
 
-This is a simple npm module for documenting the OSS in your node.js project. 
+This is a simple npm module for documenting the OSS in your node.js project. See our [documentaion here.](http://logrhythm.github.io/node-oss)
 
 ## How it works
 
