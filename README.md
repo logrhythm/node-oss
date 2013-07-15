@@ -47,3 +47,14 @@ If you wish you may declare further OSS to be included in the `.CSV`, by adding 
      }
      
 including the `url` is entirely optional right now, but may have a use in the future. For the moment its just for your reffernce as a part of documentaion.
+
+## Goals
+
+In the future!
+
+- Add full support for a special syntax that will allow you to document OSS in code comments.
+- Nicer CSV with url column.
+- For popular npm packages that `node-oss` does not find licenses for, add limited data store.
+- Add option to output files to a specific path in `osslist.json`.
+- Make all options accessible via commandline.
+- Add 'wizard mode' where the script can pause and wait for the user to find the license for an undetected package.
