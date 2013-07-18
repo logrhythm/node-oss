@@ -4,7 +4,7 @@ This is a simple npm module for documenting the OSS in your node.js project. See
 
 ## How it works
 
-**node-oss** piggy packs off of a native npm function [`npm list`](https://npmjs.org/doc/list.html). This function recursively returns all the npm modules in your project. **node-oss** uses this list and finds all the unique projects as npm's nested nature produces many duplicates. It then scrapes the web to find the license for each npm module. Finally it returns a `.CSV` listing all the modules alphabetically along with their licenses.
+**node-oss** piggy backs off of a native npm function [`npm list`](https://npmjs.org/doc/list.html). This function recursively returns all the npm modules in your project. **node-oss** uses this list and finds all the unique projects as npm's nested nature produces many duplicates. It then scrapes the web to find the license for each npm module. Finally it returns a `.CSV` listing all the modules alphabetically along with their licenses.
 
 #### What if **node-oss** fails to find the license?
 
